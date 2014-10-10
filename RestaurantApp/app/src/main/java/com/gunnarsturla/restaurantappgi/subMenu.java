@@ -27,3 +27,5 @@ public class subMenu {
 	public String getDescription()  { return  description; }
 	public String getImghash()		{ return imghash;   }
 }
+
+/** Bara athuga hvernig þetta virkar **/
