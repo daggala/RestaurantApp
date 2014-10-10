@@ -7,6 +7,6 @@ package com.gunnarsturla.restaurantappgi;
 public class menu {
 
 }
-/**
+/*
  * thorhildur deleted commit
  */
