@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-    <super id=”3”>
+    <super version=”3”> <!-- Version incrementast í hvert skitpti sem matseðillinn er uppfærður -->
         <menu timestart=”08.00” timeend=”10.99”>
             <name>Morgunmatur</name>
         
