@@ -6,19 +6,19 @@ import java.util.Vector;
  * Hver undirmatseðill í matseðilstrénu,
  * td. Forréttir, eða drykkir
  */
-public class subMenu {
+public class SubMenu {
 	private String 	name,
 			description,
 			imghash;
 	private Vector items = new Vector();
 
-	public subMenu(String name, String description, String imghash) {
+	public SubMenu(String name, String description, String imghash) {
 		this.name 		 = name;
 		this.description = description;
 		this.imghash	 = imghash;
 	}
 
-	public boolean addItem(item i) {
+	public boolean addItem(Item i) {
 		return items.add(i);
 	}
 
