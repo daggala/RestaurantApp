@@ -6,14 +6,18 @@ import java.util.Vector;
  * Created by Gunnar on 9.10.14.
  */
 public class item {
-	private int id, price, calories;
-	private String	name,
-					description,
-					ingredients;
-	private Vector allergens = new Vector();
-	private Vector filterable = new Vector();
+	private int id,					// id á vörunni
+				price,				// Verð vörunnar
+				calories;			// Calories, ef = 0, þá ekki matur
+	private String	name,			// nafn
+					description,	// Textalýsing
+					ingredients,	// innihaldsefni
+					imghash;		// Einstakt hash fyrir þessar myndir,
+									// sem breytist ef myndirnar eru uppfærðar
+	private Vector allergens = new Vector();  // Vector sem heldur utan um ofnæmisvalda
+	private Vector filterable = new Vector(); // Vector sem heldur utan um síanlega hluti, eins og vegetarian, ofl.
 
-	public item(int id, int price, int cals, String name, String description, String ingredients)
+	public item(int id, int price, int cals, String name, String description, String ingredients, String imghash)
 	{
 		this.id 		= id;			// id á vörunni
 		this.price 		= price;		// Verð vörunnar
@@ -21,6 +25,8 @@ public class item {
 		this.name 		= name;			// nafn
 		this.description= description;	// Textalýsing
 		this.ingredients= ingredients;	// innihaldsefni
+		this.imghash	= imghash;		// Einstakt hash fyrir þessar myndir,
+										// sem breytist ef myndirnar eru uppfærðar
 	}
 
 	// Bætir ofnæmisvaldi við, skilar true ef það tókst
@@ -35,12 +41,13 @@ public class item {
 
 	// Aðgerðir til að ná í upplýsingar úr þessum hlut.
 	// Notkun, fyrir og eftir er frekar fyrirsjáanlegt.
-	public int 	getId() 			{ return id; 		}
-	public int 	getPrice() 			{ return price; 	}
-	public int 	getCalories()		{ return calories; 	}
+	public int 	  getId() 			{ return id; 		}
+	public int 	  getPrice() 		{ return price; 	}
+	public int 	  getCalories()		{ return calories; 	}
 	public String getName()			{ return name; 		}
 	public String getDescription()	{ return description; }
 	public String getIngredients()	{ return ingredients; }
+	public String getImghash()		{ return imghash;   }
 
 
 	public boolean hasAllergens() 	{ return !allergens.isEmpty(); }
@@ -51,7 +58,6 @@ public class item {
 		return false;
 	}
 	public Object[] getAllergens()	{ return allergens.toArray(); }
-
 
 	public boolean hasFilterable()	{ return !filterable.isEmpty(); }
 	public boolean hasFilterable(String hasIt)
