@@ -29,3 +29,4 @@ public class subMenu {
 }
 
 /** Bara athuga hvernig þetta virkar **/
+// TEST NÚMER TVO!!
