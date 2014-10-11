@@ -2,7 +2,7 @@ package com.gunnarsturla.restaurantappgi;
 
 import junit.framework.TestCase;
 
-public class CommunicatorTest extends TestCase {
+public class XMLParserTest extends TestCase {
 
     public void setUp() throws Exception {
         super.setUp();
