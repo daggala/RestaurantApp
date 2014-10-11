@@ -13,7 +13,7 @@ import android.os.Build;
 
 
 
-public class Main extends Activity {
+public class main extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
