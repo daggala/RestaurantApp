@@ -20,7 +20,7 @@ public class XMLParser {
         } catch (SAXException e) {
             e.printStackTrace();
         }
-        webUrl = "file:///home/thorhildur/AndroidStudioProjects/RestaurantApp/dummy.xml"; //web service url
+        webUrl = "https://notendur.hi.is/thm30/XMLParsing/employees.xml"; //web service url
     }
 
     public int getVersionNumber() {
