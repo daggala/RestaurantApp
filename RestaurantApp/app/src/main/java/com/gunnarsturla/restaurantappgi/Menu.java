@@ -6,4 +6,7 @@ package com.gunnarsturla.restaurantappgi;
  */
 public class Menu {
 
+
+
+
 }
