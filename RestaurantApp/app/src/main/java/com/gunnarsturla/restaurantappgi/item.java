@@ -5,7 +5,7 @@ import java.util.Vector;
 /**
  * Created by Gunnar on 9.10.14.
  */
-public class item {
+public class Item {
 	private int id,					// id á vörunni
 				price,				// Verð vörunnar
 				calories;			// Calories, ef = 0, þá ekki matur
@@ -17,7 +17,7 @@ public class item {
 	private Vector allergens = new Vector();  // Vector sem heldur utan um ofnæmisvalda
 	private Vector filterable = new Vector(); // Vector sem heldur utan um síanlega hluti, eins og vegetarian, ofl.
 
-	public item(int id, int price, int cals, String name, String description, String ingredients, String imghash)
+	public Item(int id, int price, int cals, String name, String description, String ingredients, String imghash)
 	{
 		this.id 		= id;			// id á vörunni
 		this.price 		= price;		// Verð vörunnar

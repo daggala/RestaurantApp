@@ -2,7 +2,6 @@
     <super version=”3”> <!-- Version incrementast í hvert skitpti sem matseðillinn er uppfærður -->
         <menu timestart=”08.00” timeend=”10.99”>
             <name>Morgunmatur</name>
-        
         </menu>
         <menu timestart=”11.00” timeend=”22.00”>
             <name>Forréttir</name>
@@ -17,7 +16,7 @@
                 <ingredients>Humarhalar, hvítlaukur, smjör, ger </ingredients>
                 <calories>1700</calories>
                 <vegetarian>FALSE</vegetarian>
-<picture> http://www.decalsplanet.com/img_b/vinyl-decal-sticker-6890.jpg </picture>
+                <picture> http://www.decalsplanet.com/img_b/vinyl-decal-sticker-6890.jpg </picture>
                 <preptime>10</preptime>
             </item>
 
@@ -30,7 +29,7 @@
                 <ingredients>Humarhalar, hvítlaukur, smjör, ger </ingredients>
                 <calories>1700</calories>
                 <vegetarian>FALSE</vegetarian>
-<picture> http://www.decalsplanet.com/img_b/vinyl-decal-sticker-6890.jpg </picture>
+                <picture> http://www.decalsplanet.com/img_b/vinyl-decal-sticker-6890.jpg </picture>
                 <preptime>10</preptime>
             </item>
 
@@ -44,13 +43,12 @@
                 <ingredients>Parmaskinka, melóna</ingredients>
                 <calories>400</calories>
                 <vegetarian>FALSE</vegetarian>
-<picture> http://cdn.gingerandtomato.com/wp-content/uploads/2010/07/4034349625_fa187c7dd9.jpg</picture>
+                <picture> http://cdn.gingerandtomato.com/wp-content/uploads/2010/07/4034349625_fa187c7dd9.jpg</picture>
                 <preptime>10</preptime>
             </item>
 
         </menu>
         <menu>
-        ….
         </menu>
     <super>
 </xml>
