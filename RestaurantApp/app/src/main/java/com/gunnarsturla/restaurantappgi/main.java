@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 
 
-public class Main extends Activity {
+public class main extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
