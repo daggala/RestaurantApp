@@ -8,13 +8,15 @@ import android.widget.BaseExpandableListAdapter;
 /**
  * Created by Gunnar on 14.10.14.
  */
-public class MenuAdapter  extends BaseExpandableListAdapter {
+public class MenuAdapter extends BaseExpandableListAdapter {
 
 	private Context context;
-	private W8rMenu SuperMenu;
+	private SubMenu[] superMenu;
 
 	public MenuAdapter(Context context) {
 		this.context = context;
+
+		superMenu = W8rMenu.getSubMenus();
 	}
 
 	@Override

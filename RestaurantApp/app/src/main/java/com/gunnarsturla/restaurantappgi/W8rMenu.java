@@ -7,7 +7,16 @@ import java.util.Vector;
  *
  */
 public class W8rMenu {
-	private Vector<SubMenu> subMenus = new Vector();
+	private Vector<SubMenu> subMenus;
 
+	public W8rMenu() {
+		subMenus = new Vector<SubMenu>();
+	}
+
+	public SubMenu[] getSubMenus() {
+		SubMenu sm[] = new SubMenu[subMenus.size()];
+		subMenus.toArray(sm);
+		return sm;
+	}
 	
 }

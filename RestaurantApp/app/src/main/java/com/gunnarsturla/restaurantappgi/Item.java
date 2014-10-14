@@ -27,8 +27,8 @@ public class Item {
 		this.ingredients= ingredients;	// innihaldsefni
 		this.imghash	= imghash;		// Einstakt hash fyrir þessar myndir,
 		// sem breytist ef myndirnar eru uppfærðar
-		allergens =  new Vector();
-		filterable = new Vector();
+		allergens =  new Vector<String>();
+		filterable = new Vector<String>();
 	}
 
 	// Bætir ofnæmisvaldi við, skilar true ef það tókst
