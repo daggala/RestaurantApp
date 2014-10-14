@@ -8,20 +8,20 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.ExpandableListView;
 
 
 public class main extends Activity {
+
+	private ExpandableListView menuList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-        }
+
+		menuList = (ExpandableListView) findViewById(R.id.matsedillExpandable);
+		menuList.setAdapter(new MenuAdapter(this));
     }
 
 

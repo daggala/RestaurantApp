@@ -5,11 +5,10 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-	<fragment
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:name="com.gunnarsturla.restaurantappgi.main.PlaceholderFragment"
-		android:id="@+id/fragment"
-		android:layout_gravity="center_horizontal"/>
 
+	<ExpandableListView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/matsedillExpandable"
+		android:layout_gravity="center_horizontal"/>
 </LinearLayout>
