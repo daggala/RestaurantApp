@@ -16,7 +16,7 @@ public class SubMenu {
 		this.name 		 = name;
 		this.description = description;
 		this.imghash	 = imghash;
-		items = new Vector();
+		items = new Vector<Item>();
 	}
 
 	public boolean addItem(Item i) {
@@ -25,6 +25,6 @@ public class SubMenu {
 
 	public String getName()   		{ return name; }
 	public Object[] getItems() 		{ return items.toArray(); }
-	public String getDescription()  { return  description; }
+	public String getDescription()  { return description; }
 	public String getImghash()		{ return imghash;   }
 }
