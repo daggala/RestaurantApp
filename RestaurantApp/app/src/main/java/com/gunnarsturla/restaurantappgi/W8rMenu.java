@@ -7,7 +7,7 @@ import java.util.Vector;
  *
  */
 public class W8rMenu {
-	private Vector subMenus = new Vector();
+	private Vector<SubMenu> subMenus = new Vector();
 
 	
 }

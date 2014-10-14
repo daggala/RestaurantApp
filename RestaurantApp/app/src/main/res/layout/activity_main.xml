@@ -1,47 +1,14 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".main$PlaceholderFragment">
+<?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
-  <Button
-      android:id="@+id/button1"
-      android:text="FORRÉTTIR"
-      android:textSize="60dp"
-      android:textAlignment="center"
-      android:layout_width="383"
-      android:layout_height="130"
-      android:background="#ff206d13"
-      android:textColor="#ffffffff" />
-    <Button
-        android:id="@+id/button2"
-        android:text="AÐALRÉTTIR"
-        android:textSize="60dp"
-        android:layout_width="383"
-        android:layout_height="130"
-        android:background="#ffaf332f"
-        android:textColor="#ffffffff" />
-    <Button
-        android:id="@+id/button3"
-        android:text="EFTIRRÉTTIR"
-        android:textSize="60dp"
-        android:layout_width="383"
-        android:layout_height="130"
-        android:background="#ff975c45"
-        android:textColor="#ffffffff" />
-    <Button
-        android:id="@+id/button4"
-        android:text="DRYKKIR"
-        android:textSize="60dp"
-        android:layout_width="383"
-        android:layout_height="130"
-        android:background="#ff445778"
-        android:textColor="#ffffffff"
-        android:typeface="normal" />
+
+	<ExpandableListView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/matsedillExpandable"
+		android:layout_gravity="center_horizontal"/>
+</LinearLayout>

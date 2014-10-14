@@ -7,15 +7,15 @@ import java.util.Vector;
  */
 public class Item {
 	private int id,					// id á vörunni
-			price,				// Verð vörunnar
-			calories;			// Calories, ef = 0, þá ekki matur
+				price,				// Verð vörunnar
+				calories;			// Calories, ef = 0, þá ekki matur
 	private String	name,			// nafn
-			description,	// Textalýsing
-			ingredients,	// innihaldsefni
-			imghash;		// Einstakt hash fyrir þessar myndir,
+					description,	// Textalýsing
+					ingredients,	// innihaldsefni
+					imghash;		// Einstakt hash fyrir þessar myndir,
 	// sem breytist ef myndirnar eru uppfærðar
-	private Vector allergens = new Vector();  // Vector sem heldur utan um ofnæmisvalda
-	private Vector filterable = new Vector(); // Vector sem heldur utan um síanlega hluti, eins og vegetarian, ofl.
+	private Vector<String> allergens;  // Vector sem heldur utan um ofnæmisvalda
+	private Vector<String> filterable; // Vector sem heldur utan um síanlega hluti, eins og vegetarian, ofl.
 
 	public Item(int id, int price, int cals, String name, String description, String ingredients, String imghash)
 	{
@@ -27,6 +27,8 @@ public class Item {
 		this.ingredients= ingredients;	// innihaldsefni
 		this.imghash	= imghash;		// Einstakt hash fyrir þessar myndir,
 		// sem breytist ef myndirnar eru uppfærðar
+		allergens =  new Vector();
+		filterable = new Vector();
 	}
 
 	// Bætir ofnæmisvaldi við, skilar true ef það tókst

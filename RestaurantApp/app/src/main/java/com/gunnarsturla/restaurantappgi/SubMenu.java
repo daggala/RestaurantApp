@@ -10,12 +10,13 @@ public class SubMenu {
 	private String 	name,
 					description,
 					imghash;
-	private Vector items = new Vector();
+	private Vector<Item> items;
 
 	public SubMenu(String name, String description, String imghash) {
 		this.name 		 = name;
 		this.description = description;
 		this.imghash	 = imghash;
+		items = new Vector();
 	}
 
 	public boolean addItem(Item i) {
