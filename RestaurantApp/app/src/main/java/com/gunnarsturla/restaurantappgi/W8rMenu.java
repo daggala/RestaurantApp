@@ -21,6 +21,8 @@ public class W8rMenu {
 		return sm;
 	}*/
 
+    public boolean addSubMenu(SubMenu sm) { return subMenus.add(sm); }
+
 	public SubMenu getSubMenu(int i) {
 		return subMenus.get(i);
 	}
