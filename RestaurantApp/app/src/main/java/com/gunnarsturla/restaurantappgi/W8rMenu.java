@@ -9,6 +9,7 @@ import java.util.Vector;
 public class W8rMenu {
 	private Vector<SubMenu> subMenus;
 
+
 	public W8rMenu() {
 
 		subMenus = new Vector<SubMenu>();
@@ -24,4 +25,5 @@ public class W8rMenu {
 		return subMenus.get(i);
 	}
 	public int length() { return subMenus.size(); }
+
 }
