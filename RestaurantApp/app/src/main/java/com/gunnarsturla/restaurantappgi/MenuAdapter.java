@@ -43,13 +43,13 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 	}
 
 	@Override
-	public Object getChild(int i, int i2) {
+	public Object getChild(int groupPosition, int childPosition) {
 		return null;
 	}
 
 	@Override
-	public long getChildId(int i, int i2) {
-		return 0;
+	public long getChildId(int groupPosition, int childPosition) {
+		return wm.getSubMenu(groupPosition).getItem(childPosition).getId();
 	}
 
 	@Override
@@ -58,7 +58,7 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 	}
 
 	@Override
-	public Object getGroup(int i) {
+	public Object getGroup(int groupPosition) {
 		return null;
 	}
 

@@ -14,14 +14,20 @@ import android.widget.ExpandableListView;
 public class main extends Activity {
 
 	private ExpandableListView menuList;
+	private W8rMenu wm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+		//Hér þarf að kalla á W8rMenuBuilder(), sem setur menuinn inn í W8rMenuið wm.
+		//
+
+		wm = keyraMenu.build();
+
 		menuList = (ExpandableListView) findViewById(R.id.matsedillExpandable);
-		menuList.setAdapter(new MenuAdapter(this));
+		menuList.setAdapter(new MenuAdapter(this, wm));
     }
 
 

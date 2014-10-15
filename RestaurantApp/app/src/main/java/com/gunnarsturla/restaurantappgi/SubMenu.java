@@ -28,9 +28,9 @@ public class SubMenu {
 	public String getDescription()  { return description;   }
 	public String getImghash()		{ return imghash;   	}
 	public Item   getItem(int i)	{ return items.get(i);	}
-	public Item[] getItems() {
+/*	public Item[] getItems() {
 		Item it[] = new Item[items.size()];
 		items.toArray(it);
-		return it;}
+		return it;}*/
 
 }

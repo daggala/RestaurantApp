@@ -15,11 +15,11 @@ public class W8rMenu {
 		subMenus = new Vector<SubMenu>();
 	}
 
-	public SubMenu[] getSubMenus() {
+/*	public SubMenu[] getSubMenus() {
 		SubMenu sm[] = new SubMenu[subMenus.size()];
 		subMenus.toArray(sm);
 		return sm;
-	}
+	}*/
 
 	public SubMenu getSubMenu(int i) {
 		return subMenus.get(i);
