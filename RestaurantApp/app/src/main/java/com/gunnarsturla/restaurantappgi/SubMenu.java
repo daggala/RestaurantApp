@@ -23,8 +23,14 @@ public class SubMenu {
 		return items.add(i);
 	}
 
-	public String getName()   		{ return name; }
-	public Object[] getItems() 		{ return items.toArray(); }
-	public String getDescription()  { return description; }
-	public String getImghash()		{ return imghash;   }
+	public int	  length()			{ return items.size();	}
+	public String getName()   		{ return name; 			}
+	public String getDescription()  { return description;   }
+	public String getImghash()		{ return imghash;   	}
+	public Item   getItem(int i)	{ return items.get(i);	}
+	public Item[] getItems() {
+		Item it[] = new Item[items.size()];
+		items.toArray(it);
+		return it;}
+
 }

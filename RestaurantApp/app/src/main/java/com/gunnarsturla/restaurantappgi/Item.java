@@ -26,6 +26,22 @@ public class Item {
 		this.description= description;	// Textalýsing
 		this.ingredients= ingredients;	// innihaldsefni
 		this.imghash	= imghash;		// Einstakt hash fyrir þessar myndir,
+										// sem breytist ef myndirnar eru uppfærðar
+		allergens =  new Vector<String>();
+		filterable = new Vector<String>();
+	}
+
+	// afritar basically annað item.
+	// gagnlegt þegar kúnni setur nýjan rétt í
+	// orderqueue
+	public Item(Item i) {
+		this.id 		= i.getId();	// id á vörunni
+		this.price 		= i.getPrice();		// Verð vörunnar
+		this.calories 	= i.getCalories();			// Calories, ef = 0, þá ekki matur
+		this.name 		= i.getName();			// nafn
+		this.description= i.getDescription();	// Textalýsing
+		this.ingredients= i.getIngredients();	// innihaldsefni
+		this.imghash	= i.getImghash();		// Einstakt hash fyrir þessar myndir,
 		// sem breytist ef myndirnar eru uppfærðar
 		allergens =  new Vector<String>();
 		filterable = new Vector<String>();

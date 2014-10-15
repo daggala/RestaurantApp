@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.TextView;
 
 /**
  * Created by Gunnar on 14.10.14.
@@ -11,27 +12,34 @@ import android.widget.BaseExpandableListAdapter;
 public class MenuAdapter extends BaseExpandableListAdapter {
 
 	private Context context;
-	private SubMenu[] superMenu;
+//	private SubMenu[] subMenuList;
+	private W8rMenu wm;
 
-	public MenuAdapter(Context context) {
+	public MenuAdapter(Context context, W8rMenu wm) {
 		this.context = context;
+		this.wm = wm;
+		//subMenuList = wm.getSubMenus();
 
-		superMenu = W8rMenu.getSubMenus();
 	}
 
 	@Override
-	public View getChildView(int i, int i2, boolean b, View view, ViewGroup viewGroup) {
-		return null;
+	public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+		// Tímabundið textview, til að tékka hvort allt virki ekki.
+		// Í framtíðinni á að koma bakgrunnsmynd og fleira fallegt.
+		TextView tv = new TextView(context);
+		// Þetta finnst mér geðveikt kúl:
+		tv.setText(wm.getSubMenu(groupPosition).getItem(childPosition).getName());
+		return tv;
 	}
 
 	@Override
-	public boolean isChildSelectable(int i, int i2) {
-		return false;
+	public boolean isChildSelectable(int groupPosition, int childPosition) {
+		return true;
 	}
 
 	@Override
-	public int getChildrenCount(int i) {
-		return 0;
+	public int getChildrenCount(int groupPosition) {
+		return wm.getSubMenu(groupPosition).length();
 	}
 
 	@Override
@@ -46,7 +54,7 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 
 	@Override
 	public int getGroupCount() {
-		return 0;
+		return wm.length();
 	}
 
 	@Override
@@ -55,13 +63,15 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 	}
 
 	@Override
-	public long getGroupId(int i) {
-		return 0;
+	public long getGroupId(int groupPosition) {
+		return groupPosition;
 	}
 
 	@Override
-	public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
-		return null;
+	public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
+		TextView tv = new TextView(context);
+		tv.setText(wm.getSubMenu(groupPosition).getName());
+		return tv;
 	}
 
 	@Override
