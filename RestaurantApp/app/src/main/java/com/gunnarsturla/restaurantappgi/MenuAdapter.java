@@ -1,8 +1,6 @@
 package com.gunnarsturla.restaurantappgi;
 
 import android.content.Context;
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
@@ -23,7 +21,6 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 		this.wm = wm;
 		this.order = order;
 		//subMenuList = wm.getSubMenus();
-
 	}
 
 	@Override
@@ -32,19 +29,26 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 		// Í framtíðinni á að koma bakgrunnsmynd og fleira fallegt.
 		TextView tv = new TextView(context);
 		// Þetta finnst mér geðveikt kúl:
-		tv.setText(wm.getSubMenu(groupPosition).getItem(childPosition).getName());
+		tv.setText(	wm.getSubMenu(groupPosition).getItem(childPosition).getName() +
+					"\n" +
+					wm.getSubMenu(groupPosition).getItem(childPosition).getPrice() +
+					" kr.\n\n" +
+					wm.getSubMenu(groupPosition).getItem(childPosition).getDescription());
 		tv.setTextSize(20);
-		tv.setPadding(50,5,50,5);
+		tv.setPadding(10,5,10,5);
 
 		tv.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				order.addItem(wm.getSubMenu(groupPosition).getItem(childPosition));
-				System.out.println("Pöntun tókst!");
+				System.out.println("Pöntun tókst!" + wm.getSubMenu(groupPosition).getName());
 			}
 		});
 
 		return tv;
+
+
+
 	}
 
 	@Override
@@ -86,14 +90,15 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 	public View getGroupView(final int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
 		TextView tv = new TextView(context);
 		tv.setText(wm.getSubMenu(groupPosition).getName());
-		tv.setTextSize(50);
-		tv.setPadding(60, 200, 30, 5);
+		tv.setTextSize(35);
+		tv.setPadding(60, 100, 30, 5);
 
 
-		Resources res = context.getResources();
+/*		Resources res = context.getResources();
 
 		Drawable drawable = res.getDrawable(R.drawable.sm121);
-		tv.setBackground(drawable);
+		tv.setBackground(drawable);*/
+		tv.setHeight(220);
 
 		return tv;
 	}

@@ -11,9 +11,4 @@
 	android:id="@+id/matsedillExpandable"
 	android:layout_gravity="center_horizontal"/>
 
-	<Button
-		android:layout_width="wrap_content"
-		android:layout_height="100dp"
-		android:text="Panta!"
-		android:id="@+id/orderBtn"/>
 </LinearLayout>
