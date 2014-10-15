@@ -6,7 +6,7 @@ package com.gunnarsturla.restaurantappgi;
 public class keyraMenu {
 
 
-    public W8rMenu build() {
+    public static W8rMenu build() {
         Item item1 = new Item(1, 999, 520, "Horpuskeljar", "Gott", "Rjomi, sjavardyr og allskonar", "11");
         Item item2 = new Item(2, 1999, 920, "Hamborgari", "Snilld", "Kal, gurka, tomatur, kjot", "12");
         Item item3 = new Item(item1);
