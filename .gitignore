@@ -16,3 +16,5 @@ hs_err_pid*
 .idea/misc.xml
 
 RestaurantApp/app/src/androidTest/androidTest.iml
+
+RestaurantApp/app/src/main/java/com/gunnarsturla/restaurantappgi/W8rMenu.java
