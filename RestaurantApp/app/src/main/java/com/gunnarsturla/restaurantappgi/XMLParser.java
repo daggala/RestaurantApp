@@ -11,7 +11,7 @@ import org.xml.sax.helpers.XMLReaderFactory;
  */
 public class XMLParser {
     public int versionNumber;
-    public String webUrl;
+    public String webUrl, localUrl;
     public XMLReader webreader; //SAX Xml parser
 
     public XMLParser() {
@@ -21,13 +21,7 @@ public class XMLParser {
             e.printStackTrace();
         }
         webUrl = "https://notendur.hi.is/thm30/XMLParsing/employees.xml"; //web service url
+        localUrl = "file:///home/thorhildur/employees.xml"; // local url to xml
     }
 
-    public int getVersionNumber() {
-        return versionNumber;
-    }
-
-    public void setVersionNumber(int versionNumber) {
-        this.versionNumber = versionNumber;
-    }
 }
