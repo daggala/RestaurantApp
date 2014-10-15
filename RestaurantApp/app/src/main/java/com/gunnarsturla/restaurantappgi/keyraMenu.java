@@ -7,13 +7,13 @@ public class keyraMenu {
 
 
     public static W8rMenu build() {
-        Item item1 = new Item(1, 999, 520, "Horpuskeljar", "Gott", "Rjomi, sjavardyr og allskonar", "11");
-        Item item2 = new Item(2, 1999, 920, "Hamborgari", "Snilld", "Kal, gurka, tomatur, kjot", "12");
+        Item item1 = new Item(1, 999, 520, "Hörpuskeljar", "Gott", "Rjómi, skelfiskur, allskonar", "11");
+        Item item2 = new Item(2, 1999, 920, "Hamborgari", "Snilld", "Kal, gúrka, tómatur, kjöt", "12");
         Item item3 = new Item(item1);
         Item item4 = new Item(item2);
 
-        SubMenu sm1 = new SubMenu("Forrettur", "", "21");
-        SubMenu sm2 = new SubMenu("Adalrettur", "", "22");
+        SubMenu sm1 = new SubMenu("Forréttur", "", "21");
+        SubMenu sm2 = new SubMenu("Aðalréttur", "", "22");
 
         if (!sm1.addItem(item1)) {
             System.out.println("Error: ekki tókst að bæta " + item1.getName() + " við í SubMenu " + sm1.getName());

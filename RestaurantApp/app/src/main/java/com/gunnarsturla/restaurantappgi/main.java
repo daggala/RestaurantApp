@@ -15,6 +15,7 @@ public class main extends Activity {
 
 	private ExpandableListView menuList;
 	private W8rMenu wm;
+	private SubMenu order;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +26,10 @@ public class main extends Activity {
 		//
 
 		wm = keyraMenu.build();
+		order = new SubMenu();
 
 		menuList = (ExpandableListView) findViewById(R.id.matsedillExpandable);
-		menuList.setAdapter(new MenuAdapter(this, wm));
+		menuList.setAdapter(new MenuAdapter(this, wm, order));
     }
 
 
@@ -35,6 +37,7 @@ public class main extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the Menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+
         return true;
     }
 

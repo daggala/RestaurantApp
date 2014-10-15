@@ -19,6 +19,14 @@ public class SubMenu {
 		items = new Vector<Item>();
 	}
 
+	public SubMenu() {
+		this.name = "order";
+		this.description = "";
+		this.imghash = "";
+
+		items = new Vector<Item>();
+	}
+
 	public boolean addItem(Item i) {
 		return items.add(i);
 	}
@@ -32,5 +40,15 @@ public class SubMenu {
 		Item it[] = new Item[items.size()];
 		items.toArray(it);
 		return it;}*/
+
+	// eyðir öllu út úr items, en bara ef þetta er pöntun
+	public boolean reset() {
+		if(this.name == "order") {
+			items = new Vector<Item>();
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 }
