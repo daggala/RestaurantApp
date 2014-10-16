@@ -33,7 +33,16 @@ public class Item {
 		allergens =  new Vector<String>();
 		filterable = new Vector<String>();
 	}
-
+    public Item(int id){
+        this.id = id;
+    }
+    public void setId(int id) 					{ this.id = id; }
+    public void setPrice(int price) 			{ this.price = price; 	}
+    public void setCalories(int cal)			{ this.calories = cal; 	}
+    public void setName(String name)			{ this.name = name; 		}
+    public void setDescription(String desc)		{ this.description = desc; }
+    public void setIngredients(String ingr)		{ this.ingredients = ingr; }
+    public void setImghash(String imghash)		{ this.imghash = imghash;   }
 	// afritar basically annað item.
 	// gagnlegt þegar kúnni setur nýjan rétt í
 	// orderqueue

@@ -12,7 +12,6 @@ package com.gunnarsturla.restaurantappgi;
  */
 public class keyraMenu {
 
-
     public static W8rMenu build() {
         Item item1 = new Item(1, 1999, 520, "Humarhalar", "Hvítlaukssteiktir humarhalar, bornir fram með heimabökuðu brauði og þremur tegundum af smjöri", "Rjómi, skelfiskur, allskonar", "11");
         Item item2 = new Item(2, 2490, 920, "Hamborgari", "Sýrður rjómi, Maríbó ostur og kaffi BBQ. Franskar kartöflur með kryddjurtum og Vesturbæjar mæjó ", "Kal, gúrka, tómatur, kjöt", "12");

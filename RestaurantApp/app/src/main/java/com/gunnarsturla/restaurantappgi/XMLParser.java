@@ -1,8 +1,5 @@
 package com.gunnarsturla.restaurantappgi;
 
-import org.xml.sax.SAXException;
-import org.xml.sax.XMLReader;
-import org.xml.sax.helpers.XMLReaderFactory;
 
 /**
  * @author Þórhildur Magnúsdóttir
@@ -10,20 +7,43 @@ import org.xml.sax.helpers.XMLReaderFactory;
  * This class communicates with the web service to update the xml file if
  * a new version is available.
  */
+import java.io.IOException;
+import java.io.InputStream;
+import android.util.Log;
+
+import org.xml.sax.SAXException;
+import java.net.URL;
+import java.util.List;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
 
 public class XMLParser {
-    public int versionNumber;
-    public String webUrl, localUrl;
-    public XMLReader webreader; //SAX Xml parser
-
-    public XMLParser() {
+    public XMLParser(){
+    }
+    public List<Item> parseXML() {
+        Log.i("Parsing", "came here");
+        InputStream xmlInput;
+        xmlInput = null;
         try {
-            webreader = XMLReaderFactory.createXMLReader(); //xml parser
-        } catch (SAXException e) {
+            xmlInput = new URL("https://raw.githubusercontent.com/daggala/RestaurantApp/master/RestaurantApp/app/src/main/w8rmenu.xml").openStream();
+        } catch (IOException e) {
             e.printStackTrace();
         }
-        webUrl = "https://notendur.hi.is/thm30/XMLParsing/employees.xml"; //web service url
-        localUrl = "file:///home/thorhildur/employees.xml"; // local url to xml
+        SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
+        List<Item> items = null;
+        try {
+            SAXParser saxParser = saxParserFactory.newSAXParser();
+            XMLHandler handler = new XMLHandler();
+            saxParser.parse(xmlInput, handler);
+            items = handler.getItems();
+//            for (Item item : items) {
+//                Log.i(item.getId());
+//            }
+        } catch (SAXException | ParserConfigurationException | IOException e) {
+            e.printStackTrace();
+        }
+        return items;
     }
-
 }
