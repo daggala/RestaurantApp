@@ -3,8 +3,10 @@ package com.gunnarsturla.restaurantappgi;
 import java.util.Vector;
 
 /**
- * Created by Gunnar on 9.10.14.
- *
+ * @author Gunnar Sturla Ágústuson
+ * @since 9.10.14
+ * Klasinn sem heldur utan um yfirmatseðil í matseðlatréinu og setur hvern
+ * undirmatseðil í yfirmatseðilinn.
  */
 public class W8rMenu {
 	private Vector<SubMenu> subMenus;

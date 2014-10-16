@@ -3,6 +3,13 @@ package com.gunnarsturla.restaurantappgi;
 /**
  * Created by Dagny on 14.10.2014.
  */
+
+/**
+ * @author Dagný Lára Guðmundsdóttir
+ * @since 14.10.14
+ * Tímabundinn klasi þar sem við harðkóðum innihald matseðilsins.
+ * Seinna munum við ná í innihaldið úr xml skrá með SAX.
+ */
 public class keyraMenu {
 
 

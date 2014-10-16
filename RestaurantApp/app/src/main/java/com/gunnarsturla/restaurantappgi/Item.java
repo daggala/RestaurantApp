@@ -3,8 +3,11 @@ package com.gunnarsturla.restaurantappgi;
 import java.util.Vector;
 
 /**
- * Created by Gunnar on 9.10.14.
+ * @author Gunnar Sturla Ágústuson
+ * @since 9.10.14
+ * Klasinn sem heldur utan um alla réttina á matseðlinum og alla eiginleika þeirra
  */
+
 public class Item {
 	private int id,					// id á vörunni
 				price,				// Verð vörunnar

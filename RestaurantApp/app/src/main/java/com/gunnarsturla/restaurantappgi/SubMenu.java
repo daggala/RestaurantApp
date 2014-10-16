@@ -3,9 +3,12 @@ package com.gunnarsturla.restaurantappgi;
 import java.util.Vector;
 
 /**
- * Hver undirmatseðill í matseðilstrénu,
- * td. Forréttir, eða drykkir
+ * @author Gunnar Sturla Ágústuson
+ * @since 14.10.14
+ * Klasinn sem heldur utan um undirmatseðil í matseðlatréinu (t.d. Forréttir, drykkir, etc.)
+ * og setur hvern rétt í ákveðinn undirmatseðil.
  */
+
 public class SubMenu {
 	private String 	name,
 					description,

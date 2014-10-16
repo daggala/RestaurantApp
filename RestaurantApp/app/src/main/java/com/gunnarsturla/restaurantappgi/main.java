@@ -10,7 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
-
+/**
+ * @author Gunnar Sturla Ágústuson
+ * @since 8.10.14
+ * Aðalklasinn sem birtir útlit forritsins og ræsir það.
+ */
 public class main extends Activity {
 
 	private ExpandableListView menuList;

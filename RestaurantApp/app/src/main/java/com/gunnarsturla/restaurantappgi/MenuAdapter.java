@@ -7,8 +7,11 @@ import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
 /**
- * Created by Gunnar on 14.10.14.
+ * @author Gunnar Sturla Ágústuson
+ * @since 14.10.14
+ * Klasinn sem lætur matseðilinn birtast í expandable list
  */
+
 public class MenuAdapter extends BaseExpandableListAdapter {
 
 	private Context context;
