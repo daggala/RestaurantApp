@@ -44,7 +44,7 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 			@Override
 			public void onClick(View v) {
 				order.addItem(wm.getSubMenu(groupPosition).getItem(childPosition));
-				System.out.println("Pöntun tókst!" + wm.getSubMenu(groupPosition).getName());
+				System.out.println("Pöntun tókst!" + wm.getSubMenu(groupPosition).getItem(childPosition).getName());
 			}
 		});
 
