@@ -30,6 +30,10 @@ public class XMLHandler extends DefaultHandler {
     boolean bIngr = false;
     boolean bImgh = false;
 
+    /*  Set each boolean variable as true when an element is started to tell the handler that he
+     *  can set the appropriate Item attribute (in method characters()).
+     */
+
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException{
         Log.i("START", String.format("Start element: %s", qName));
@@ -37,6 +41,7 @@ public class XMLHandler extends DefaultHandler {
 //            String sId = attributes.getValue("id");
 //            int id = Integer.getInteger(sId);
 //            item = new Item(0);
+            // TODO create special method for submenus
         }
         else if (qName.equalsIgnoreCase("name")){
             bName = true;
@@ -63,6 +68,7 @@ public class XMLHandler extends DefaultHandler {
         if (qName.equalsIgnoreCase("item")){
             items.add(item);
         }
+        // TODO add items to different submenus accordingly
     }
     @Override
     public void characters(char ch[], int start, int length) throws SAXException{
@@ -70,5 +76,6 @@ public class XMLHandler extends DefaultHandler {
             item.setPrice(Integer.parseInt(new String(ch, start, length)));
             bPrice = false;
         }
+        // TODO create else if for all other variables
     }
 }
