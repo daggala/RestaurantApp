@@ -3,6 +3,7 @@ package com.gunnarsturla.restaurantappgi;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,14 +16,17 @@ public class main extends Activity {
 
 	private ExpandableListView menuList;
 	private W8rMenu wm;
+    private XMLParser menuParser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Log.i("main", "ran here");
 		//Hér þarf að kalla á W8rMenuBuilder(), sem setur menuinn inn í W8rMenuið wm.
 		//
+        menuParser = new XMLParser();
+        menuParser.parseXML();
 
 		wm = keyraMenu.build();
 
