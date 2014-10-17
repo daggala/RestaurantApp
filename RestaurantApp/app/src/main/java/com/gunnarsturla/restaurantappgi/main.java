@@ -11,6 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
+import java.util.Vector;
+
 /**
  * @author Gunnar Sturla Ágústuson
  * @since 8.10.14
@@ -19,7 +21,7 @@ import android.widget.ExpandableListView;
 public class main extends Activity {
 
 	private ExpandableListView menuList;
-	private W8rMenu wm;
+	private Vector<SubMenu> wm;
 	private SubMenu order;
 
     private XMLParser menuParser;

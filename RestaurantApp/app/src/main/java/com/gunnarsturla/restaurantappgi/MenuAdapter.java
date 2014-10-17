@@ -6,6 +6,8 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
+import java.util.Vector;
+
 /**
  * @author Gunnar Sturla Ágústuson
  * @since 14.10.14
@@ -16,10 +18,10 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 
 	private Context context;
 //	private SubMenu[] subMenuList;
-	private W8rMenu wm;
+	private Vector<SubMenu> wm;
 	private SubMenu order;
 
-	public MenuAdapter(Context context, W8rMenu wm, SubMenu order) {
+	public MenuAdapter(Context context, Vector<SubMenu> wm, SubMenu order) {
 		this.context = context;
 		this.wm = wm;
 		this.order = order;
@@ -32,19 +34,19 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 		// Í framtíðinni á að koma bakgrunnsmynd og fleira fallegt.
 		TextView tv = new TextView(context);
 		// Þetta finnst mér geðveikt kúl:
-		tv.setText(	wm.getSubMenu(groupPosition).getItem(childPosition).getName() +
+		tv.setText(	wm.get(groupPosition).getItem(childPosition).getName() +
 					"\n" +
-					wm.getSubMenu(groupPosition).getItem(childPosition).getPrice() +
+					wm.get(groupPosition).getItem(childPosition).getPrice() +
 					" kr.\n\n" +
-					wm.getSubMenu(groupPosition).getItem(childPosition).getDescription());
+					wm.get(groupPosition).getItem(childPosition).getDescription());
 		tv.setTextSize(20);
 		tv.setPadding(10,5,10,5);
 
 		tv.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				order.addItem(wm.getSubMenu(groupPosition).getItem(childPosition));
-				System.out.println("Pöntun tókst!" + wm.getSubMenu(groupPosition).getItem(childPosition).getName());
+				order.addItem(wm.get(groupPosition).getItem(childPosition));
+				System.out.println("Pöntun tókst!" + wm.get(groupPosition).getItem(childPosition).getName());
 			}
 		});
 
@@ -61,7 +63,7 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 
 	@Override
 	public int getChildrenCount(int groupPosition) {
-		return wm.getSubMenu(groupPosition).length();
+		return wm.get(groupPosition).length();
 	}
 
 	@Override
@@ -71,12 +73,12 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 
 	@Override
 	public long getChildId(int groupPosition, int childPosition) {
-		return wm.getSubMenu(groupPosition).getItem(childPosition).getId();
+		return wm.get(groupPosition).getItem(childPosition).getId();
 	}
 
 	@Override
 	public int getGroupCount() {
-		return wm.length();
+		return wm.size();
 	}
 
 	@Override
@@ -92,7 +94,7 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 	@Override
 	public View getGroupView(final int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
 		TextView tv = new TextView(context);
-		tv.setText(wm.getSubMenu(groupPosition).getName());
+		tv.setText(wm.get(groupPosition).getName());
 		tv.setTextSize(35);
 		tv.setPadding(60, 100, 30, 5);
 

@@ -4,6 +4,8 @@ package com.gunnarsturla.restaurantappgi;
  * Created by Dagny on 14.10.2014.
  */
 
+import java.util.Vector;
+
 /**
  * @author Dagný Lára Guðmundsdóttir
  * @since 14.10.14
@@ -12,7 +14,7 @@ package com.gunnarsturla.restaurantappgi;
  */
 public class keyraMenu {
 
-    public static W8rMenu build() {
+    public static Vector<SubMenu> build() {
 		Item item01 = new Item(3,400, 100, "Danskt Rúgbrauð", "Með osti og smjöri", "", "01");
 		Item item02 = new Item(4, 1050, 500, "Samloka í Grófu Brauði", "Geitaostur, romain salat, klettasalat pestó og rauðrófugljái", "", "");
         Item item1 = new Item(1, 1999, 520, "Humarhalar", "Hvítlaukssteiktir humarhalar, bornir fram með heimabökuðu brauði og þremur tegundum af smjöri", "Rjómi, skelfiskur, allskonar", "11");
@@ -43,15 +45,15 @@ public class keyraMenu {
             System.out.println("Error: ekki tókst að bæta " + item4.getName() + " við í SubMenu " + sm2.getName());
         }
 
-        W8rMenu wm = new W8rMenu();
+        Vector<SubMenu> wm = new Vector<SubMenu>();
 
-        if (!wm.addSubMenu(sm1)) {
+        if (!wm.add(sm1)) {
             System.out.println("Error: ekki tókst að bæta" + sm1.getName() + "við í W8rMenu");
         }
-        if (!wm.addSubMenu(sm2)) {
+        if (!wm.add(sm2)) {
             System.out.println("Error: ekki tókst að bæta" + sm2.getName() + "við í W8rMenu");
         }
-		if (!wm.addSubMenu(sm3)) {
+		if (!wm.add(sm3)) {
 			System.out.println("Error: ekki tókst að bæta" + sm2.getName() + "við í W8rMenu");
 		}
 
