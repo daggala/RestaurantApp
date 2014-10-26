@@ -4,7 +4,7 @@
     package="com.gunnarsturla.restaurantappgi" >
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="20"/>
+        android:targetSdkVersion="21"/>
     <uses-permission
         android:name="android.permission.INTERNET" />
     <application

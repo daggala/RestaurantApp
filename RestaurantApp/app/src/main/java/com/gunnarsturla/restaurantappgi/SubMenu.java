@@ -22,6 +22,8 @@ public class SubMenu {
 		items = new Vector<Item>();
 	}
 
+	// Þetta er eintak af SubMenu sem heldur
+	// utan um pöntunina sem á eftir að senda.
 	public SubMenu() {
 		this.name = "order";
 		this.description = "";

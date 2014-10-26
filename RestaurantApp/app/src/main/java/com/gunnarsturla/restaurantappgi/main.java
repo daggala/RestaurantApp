@@ -3,15 +3,14 @@ package com.gunnarsturla.restaurantappgi;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ExpandableListView;
-
-import java.util.Vector;
 
 /**
  * @author Gunnar Sturla Ágústuson
@@ -20,27 +19,45 @@ import java.util.Vector;
  */
 public class main extends Activity {
 
-	private ExpandableListView menuList;
-	private Vector<SubMenu> wm;
-	private SubMenu order;
+//	private W8r w8r;
 
-    private XMLParser menuParser;
+	private RecyclerView mRecyclerView;
+	private RecyclerView.Adapter mAdapter;
+	private RecyclerView.LayoutManager mLayoutManager;
+
+	public main() {
+	}
+
+
+	//private XMLParser menuParser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.i("main", "ran here");
-		//Hér þarf að kalla á W8rMenuBuilder(), sem setur menuinn inn í W8rMenuið wm.
-        menuParser = new XMLParser();
-        menuParser.parseXML();
 
-		wm = keyraMenu.build();
-		order = new SubMenu();
+		W8r.build();
 
-		menuList = (ExpandableListView) findViewById(R.id.matsedillExpandable);
-		menuList.setAdapter(new MenuAdapter(this, wm, order));
-    }
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
+
+		// use this setting to improve performance if you know that changes
+		// in content do not change the layout size of the RecyclerView
+		mRecyclerView.setHasFixedSize(true);
+
+		// use a linear layout manager
+		mLayoutManager = new LinearLayoutManager(this);
+		mRecyclerView.setLayoutManager(mLayoutManager);
+
+		// specify an adapter (see also next example)
+		mAdapter = new RecyclerAdapter();// (w8r);
+		mRecyclerView.setAdapter(mAdapter);
+
+
+
+	}
 
 
     @Override

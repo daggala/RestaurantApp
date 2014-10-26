@@ -6,7 +6,7 @@ package com.gunnarsturla.restaurantappgi;
  * @since 12.10.14
  * This class communicates with the web service to update the xml file if
  * a new version is available.
- */
+
 import java.io.IOException;
 import java.io.InputStream;
 import android.util.Log;
@@ -47,3 +47,4 @@ public class XMLParser {
         return items;
     }
 }
+*/
