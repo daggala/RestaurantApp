@@ -17,10 +17,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 	// you provide access to all the views for a data item in a view holder
 	public static class ViewHolder extends RecyclerView.ViewHolder {
 		// each data item is just a string in this case
-		public TextView mTextView;
+		public TextView itemName, itemDescryption;
 		public ViewHolder(View v) {
 			super(v);
-			mTextView = (TextView) v;
+			itemName = (TextView) itemView.findViewById(R.id.itemName);
+			itemDescryption = (TextView) itemView.findViewById(R.id.itemDestription);
 		}
 	}
 
@@ -35,8 +36,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 												   int viewType) {
 		// create a new view
 		View v = LayoutInflater.from(parent.getContext())
-				.inflate(R.layout.my_text_view, parent, false);
+				.inflate(R.layout.card_item, parent, false);
 		// set the view's size, margins, paddings and layout parameters
+
 
 		return new ViewHolder(v);
 	}
@@ -46,13 +48,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 	public void onBindViewHolder(ViewHolder holder, int position) {
 		// - get element from your dataset at this position
 		// - replace the contents of the view with that element
-		holder.mTextView.setText(W8r.get(position).getName());
+		holder.itemName.setText(W8r.get(0).get(position).getName());
+		holder.itemDescryption.setText(W8r.get(0).get(position).getDescription());
 
 	}
 
 	// Return the size of your dataset (invoked by the layout manager)
 	@Override
 	public int getItemCount() {
-		return W8r.size();
+		return W8r.get(0).length();
 	}
 }

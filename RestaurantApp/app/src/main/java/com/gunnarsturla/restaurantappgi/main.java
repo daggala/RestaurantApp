@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * @author Gunnar Sturla Ágústuson
@@ -52,9 +53,11 @@ public class main extends Activity {
 		mRecyclerView.setLayoutManager(mLayoutManager);
 
 		// specify an adapter (see also next example)
-		mAdapter = new RecyclerAdapter();// (w8r);
+		mAdapter = new RecyclerAdapter();
 		mRecyclerView.setAdapter(mAdapter);
 
+		TextView smName = (TextView) findViewById(R.id.smName);
+		smName.setText(W8r.get(0).getName());
 
 
 	}

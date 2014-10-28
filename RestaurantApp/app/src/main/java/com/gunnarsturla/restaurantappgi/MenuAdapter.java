@@ -34,19 +34,19 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 		// Í framtíðinni á að koma bakgrunnsmynd og fleira fallegt.
 		TextView tv = new TextView(context);
 		// Þetta finnst mér geðveikt kúl:
-		tv.setText(	wm.get(groupPosition).getItem(childPosition).getName() +
+		tv.setText(	wm.get(groupPosition).get(childPosition).getName() +
 					"\n" +
-					wm.get(groupPosition).getItem(childPosition).getPrice() +
+					wm.get(groupPosition).get(childPosition).getPrice() +
 					" kr.\n\n" +
-					wm.get(groupPosition).getItem(childPosition).getDescription());
+					wm.get(groupPosition).get(childPosition).getDescription());
 		tv.setTextSize(20);
 		tv.setPadding(10,5,10,5);
 
 		tv.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				order.addItem(wm.get(groupPosition).getItem(childPosition));
-				System.out.println("Pöntun tókst!" + wm.get(groupPosition).getItem(childPosition).getName());
+				order.addItem(wm.get(groupPosition).get(childPosition));
+				System.out.println("Pöntun tókst!" + wm.get(groupPosition).get(childPosition).getName());
 			}
 		});
 
@@ -73,7 +73,7 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 
 	@Override
 	public long getChildId(int groupPosition, int childPosition) {
-		return wm.get(groupPosition).getItem(childPosition).getId();
+		return wm.get(groupPosition).get(childPosition).getId();
 	}
 
 	@Override
