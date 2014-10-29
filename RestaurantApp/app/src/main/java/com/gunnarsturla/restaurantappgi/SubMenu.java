@@ -36,19 +36,15 @@ public class SubMenu {
 		return items.add(i);
 	}
 
-	public int	  length()			{ return items.size();	}
+	public int 	  size()			{ return items.size();	}
 	public String getName()   		{ return name; 			}
 	public String getDescription()  { return description;   }
 	public String getImghash()		{ return imghash;   	}
 	public Item get(int i)	{ return items.get(i);	}
-/*	public Item[] getItems() {
-		Item it[] = new Item[items.size()];
-		items.toArray(it);
-		return it;}*/
 
 	// eyðir öllu út úr items, en bara ef þetta er pöntun
 	public boolean reset() {
-		if(this.name == "order") {
+		if(this.name.equals("order")) {
 			items = new Vector<Item>();
 			return true;
 		} else {

@@ -63,7 +63,7 @@ public class MenuAdapter extends BaseExpandableListAdapter {
 
 	@Override
 	public int getChildrenCount(int groupPosition) {
-		return wm.get(groupPosition).length();
+		return wm.get(groupPosition).size();
 	}
 
 	@Override

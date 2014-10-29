@@ -11,7 +11,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 /**
  * @author Gunnar Sturla Ágústuson
@@ -44,20 +43,17 @@ public class main extends Activity {
 		setContentView(R.layout.activity_main);
 		mRecyclerView = (RecyclerView) findViewById(R.id.my_recycler_view);
 
-		// use this setting to improve performance if you know that changes
-		// in content do not change the layout size of the RecyclerView
-		mRecyclerView.setHasFixedSize(true);
 
 		// use a linear layout manager
 		mLayoutManager = new LinearLayoutManager(this);
 		mRecyclerView.setLayoutManager(mLayoutManager);
 
 		// specify an adapter (see also next example)
-		mAdapter = new RecyclerAdapter();
+		mAdapter = new MainMenuAdapter();
 		mRecyclerView.setAdapter(mAdapter);
-
+/*
 		TextView smName = (TextView) findViewById(R.id.smName);
-		smName.setText(W8r.get(0).getName());
+		smName.setText(W8r.get(0).getName());*/
 
 
 	}

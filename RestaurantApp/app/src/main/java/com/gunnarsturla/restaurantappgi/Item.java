@@ -21,6 +21,9 @@ public class Item {
 	private Vector<String> allergens;  // Vector sem heldur utan um ofnæmisvalda
 	private Vector<String> filterable; // Vector sem heldur utan um síanlega hluti, eins og vegetarian, ofl.
 
+	public Item() {
+		// Nýtt Item með engum upplýsingum, sem þarf svo að setja inn með item.setName("") og því
+	}
 	public Item(int id, int price, int cals, String name, String description, String ingredients, String imghash)
 	{
 		this.id 		= id;			// id á vörunni
