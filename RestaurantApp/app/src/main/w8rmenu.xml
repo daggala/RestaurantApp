@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <submenu>
 
-    <name>Forréttir</name>
+    <title>Forréttir</title>
     <imghash>1</imghash>
     <items>
         <item id="1">
@@ -39,7 +39,7 @@
         </item>
     </items>
 
-    <name>Aðalréttir</name>
+    <title>Aðalréttir</title>
     <imghash>2</imghash>
     <items>
         <item id="4">
@@ -77,7 +77,7 @@
         </item>
     </items>
 
-    <name>Eftirréttir</name>
+    <title>Eftirréttir</title>
     <imghash>3</imghash>
     <items>
 
@@ -116,7 +116,7 @@
         </item>
     </items>
 
-    <name>Drykkir</name>
+    <title>Drykkir</title>
     <imghash>4</imghash>
     <items>
         <item id="10">
