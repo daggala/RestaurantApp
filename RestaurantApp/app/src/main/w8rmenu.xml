@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
-<menu>
+<submenu>
     <name>Forréttir</name>
-    <item>
-        <id>1</id>
+    <item id="1">
         <name>Humarhalar</name>
         <description>Hvítlaukssteiktir humarhalar, bornir fram með heimabökuðu brauði og þremur tegundum af smjöri</description>
         <price>2990</price>
@@ -13,8 +12,7 @@
         <picture> http://www.decalsplanet.com/img_b/vinyl-decal-sticker-6890.jpg </picture>
         <preptime>10</preptime>
     </item>
-    <item>
-        <id>2</id>
+    <item id="2">
         <name>Humarsúpa</name>
         <description>Rjómalöguð humarsúpa með tómatpúrru og ferskri steinselju</description>
         <price>1990</price>
@@ -25,8 +23,7 @@
         <picture> http://www.decalsplanet.com/img_b/vinyl-decal-sticker-6890.jpg </picture>
         <preptime>30</preptime>
     </item>
-    <item>
-        <id>3</id>
+    <item id="3">
         <name>Proscuitto e melone</name>
         <description>Parmaskinka með niðurskorinni kantalópu melónu </description>
         <price>1490</price>
@@ -39,9 +36,7 @@
     </item>
 
     <name>Forréttir</name>
-
-    <item>
-        <id>4</id>
+    <item id="4">
         <name>Hamborgari hússins</name>
         <description>Grillaður hamborgari með klettasalati, tómötum, eggi og beikon, borin fram með bernaise sósu</description>
         <price>2599</price>
@@ -52,9 +47,7 @@
         <picture> http://cdn.gingerandtomato.com/wp-content/uploads/2010/07/4034349625_fa187c7dd9.jpg</picture>
         <preptime>20</preptime>
     </item>
-
-    <item>
-        <id>5</id>
+    <item id="5">
         <name>Pasta</name>
         <description>Grískt pasta með grænum og svörtum ólífum, hvítlauksolíu, sólþurrkuðum tómötum og ætiþislum</description>
         <price>1890</price>
@@ -65,9 +58,7 @@
         <picture> http://cdn.gingerandtomato.com/wp-content/uploads/2010/07/4034349625_fa187c7dd9.jpg</picture>
         <preptime>15</preptime>
     </item>
-
-    <item>
-        <id>6</id>
+    <item id="6">
         <name>Pizza bianco</name>
         <description>Eldbökuð flatbaka með basil laufum, mozzarella osti og tómötum. (Án pizzusósu). </description>
         <price>2590</price>
@@ -78,11 +69,8 @@
         <picture> http://cdn.gingerandtomato.com/wp-content/uploads/2010/07/4034349625_fa187c7dd9.jpg</picture>
         <preptime>20</preptime>
     </item>
-
     <name>Eftirréttir</name>
-
-    <item>
-        <id>7</id>
+    <item id="7">
         <name>Bananasplitt</name>
         <description>Grillaður banani með heimalöguðum vanilluís, súkkulaðinibbum, jarðaberjum og bráðinni karamellu</description>
         <price>1490</price>
@@ -93,9 +81,7 @@
         <picture> http://cdn.gingerandtomato.com/wp-content/uploads/2010/07/4034349625_fa187c7dd9.jpg</picture>
         <preptime>15</preptime>
     </item>
-
-    <item>
-        <id>8</id>
+    <item id="8">
         <name>Crème brûlée</name>
         <description>Klassískt créme brulée</description>
         <price>1490</price>
@@ -106,9 +92,7 @@
         <picture> http://cdn.gingerandtomato.com/wp-content/uploads/2010/07/4034349625_fa187c7dd9.jpg</picture>
         <preptime>20</preptime>
     </item>
-
-    <item>
-        <id>9</id>
+    <item id="9">
         <name>Sacher terta</name>
         <description>Súkkulaðiterta með súkkulaðikremi og aprikósusultu, borin fram með rjóma eða vanilluís</description>
         <price>1490</price>
@@ -119,36 +103,20 @@
         <picture> http://cdn.gingerandtomato.com/wp-content/uploads/2010/07/4034349625_fa187c7dd9.jpg</picture>
         <preptime>20</preptime>
     </item>
-
     <name>Drykkir</name>
-
-    <item>
-        <id>10</id>
+    <item id="10">
         <name>Hvítvínsglas</name>
     </item>
-
-    <item>
-        <id>11</id>
+    <item id="11">
         <name>Rauðvínsglas</name>
     </item>
-
-    <item>
-        <id>12</id>
+    <item id="12">
         <name>Rauðvínsglas</name>
     </item>
-
-    <item>
-        <id>13</id>
+    <item id="13">
         <name>Coca Cola</name>
     </item>
-
-    <item>
-        <id>14</id>
+    <item id="14">
         <name>Kaffi</name>
     </item>
-
-
-
-
-
-</menu>
+</submenu>
