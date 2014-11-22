@@ -3,10 +3,10 @@
     <submenu>
         <title>Forréttir</title>
         <imghash>1</imghash>
-        <submenupic>http://mobiledemo.lsretail.com/w8r/images/sm_snittur.png</submenupic>
+        <submenupic>http://imgur.com/EoiJUyD</submenupic>
         <items>
             <item id="1">
-                <name>Humarhalalalalalaar</name>
+                <name>Humarhalar</name>
                 <description>Hvítlaukssteiktir humarhalar, bornir fram með heimabökuðu brauði og þremur tegundum af smjöri</description>
                 <price>3990</price>
                 <allergens>Mjólk, Skelfiskur</allergens>
@@ -15,8 +15,8 @@
                 <vegetarian>FALSE</vegetarian>
                 <imghash>100</imghash>
                 <preptime>10</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/humarhalar_small.png</smallthumb>
-                <bigthumb>http://mobiledemo.lsretail.com/w8r/images/humarhalar.png</bigthumb>
+                <smallthumb>http://www.mrgunnar.com/temp/gelato.png</smallthumb>
+                <bigthumb>http://www.mrgunnar.com/temp/gelato.png</bigthumb>
             </item>
 
             <item id="2">
