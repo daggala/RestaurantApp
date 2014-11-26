@@ -3,7 +3,7 @@
     <submenu>
         <title>Forréttir</title>
         <imghash>1</imghash>
-        <submenupic>http://mobiledemo.lsretail.com/w8r/images/snittz.png</submenupic>
+        <submenupic>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/italianhordourves.jpg</submenupic>
         <items>
             <item id="1">
                 <name>Humarhalar</name>
@@ -84,7 +84,7 @@
     <submenu>
         <title>Aðalréttir</title>
         <imghash>2</imghash>
-        <submenupic>http://mobiledemo.lsretail.com/w8r/images/nautalund_sosa.png</submenupic>
+        <submenupic>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/07-wedding-dish-main-course.jpg</submenupic>
         <items>
             <item id="6">
                 <name>Hamborgari hússins</name>
@@ -156,7 +156,7 @@
     <submenu>
         <title>Eftirréttir</title>
         <imghash>3</imghash>
-        <submenupic>http://mobiledemo.lsretail.com/w8r/images/makkaronur.png</submenupic>
+        <submenupic>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/Macaroons-Haute-Couture.jpg</submenupic>
         <items>
             <item id="11">
                 <name>Myntu- og sítrónu gelato</name>
@@ -226,7 +226,7 @@
     <submenu>
         <title>Drykkir</title>
         <imghash>4</imghash>
-        <submenupic>http://mobiledemo.lsretail.com/w8r/images/beverages.png</submenupic>
+        <submenupic>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/beverages-filteration.jpg</submenupic>
         <items>
             <item id="16">
                 <name>Hvítvín hússins</name>
