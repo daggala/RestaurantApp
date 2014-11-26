@@ -93,6 +93,18 @@
                 <preptime>20</preptime>
                 <bigthumb>http://mobiledemo.lsretail.com/w8r/images/hamborgari_hussins.png</bigthumb>
             </item>
+            <item id="66">
+                <name>Steiktur lax</name>
+                <description>Steiktur lax með ferskum aspas, graslauki og gulri sósu</description>
+                <price>2599</price>
+                <allergens>Egg, hveiti, ger</allergens>
+                <ingredients>Lax, aspas, smjör, sítróna, graslaukur</ingredients>
+                <calories>550</calories>
+                <vegetarian>FALSE</vegetarian>
+                <imghash>105</imghash>
+                <preptime>20</preptime>
+                <bigthumb>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/BbDV4Z9.png</bigthumb>
+            </item>
             <item id="7">
                 <name>Alfa Salat</name>
                 <description>Grískt salat með grænum og svörtum ólífum, hvítlauksolíu, sólþurrkuðum tómötum og ætiþislum</description>
@@ -254,3 +266,5 @@
         </items>
     </submenu>
 </menu>
+Status API Training Shop Blog About
+© 2014 GitHub, Inc. Terms Privacy Security Contact
