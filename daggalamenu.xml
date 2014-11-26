@@ -184,18 +184,6 @@
                 <preptime>10</preptime>
                 <bigthumb>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/randalina.png</bigthumb>
             </item>
-            <item id="14">
-                <name>Karamelluterta</name>
-                <description>Karamelluterta með léttu vanillukremi, kakónibbum og hafrabotni</description>
-                <price>1490</price>
-                <allergens></allergens>
-                <ingredients>Súkkulaði, hveiti, egg, flórsykur, kakó, hafrar, sykur, karamella</ingredients>
-                <calories>500</calories>
-                <vegetarian>TRUE</vegetarian>
-                <imghash>110</imghash>
-                <preptime>10</preptime>
-                <bigthumb>http://mobiledemo.lsretail.com/w8r/images/randalina.png</bigthumb>
-            </item>
             <item id="15">
                 <name>Kaffi og croissant</name>
                 <description>Ilmandi kaffi malað úr eþíópskum baunum ásamt frönsku horni með ljúffengri fyllingu</description>
