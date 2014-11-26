@@ -15,7 +15,6 @@
                 <vegetarian>FALSE</vegetarian>
                 <imghash>100</imghash>
                 <preptime>10</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/humarhalar_small.png</smallthumb>
                 <bigthumb>http://mobiledemo.lsretail.com/w8r/images/humarhalar.png</bigthumb>
             </item>
 
@@ -29,8 +28,7 @@
                 <vegetarian>FALSE</vegetarian>
                 <imghash>101</imghash>
                 <preptime>10</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/snittur_small.png</smallthumb>
-                <bigthumb>http://mobiledemo.lsretail.com/w8r/images/snittur.png</bigthumb>
+                <bigthumb>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/fafba4ebdefeda50f48fb718216e7ab608b4fa00/images/snittur.png</bigthumb>
             </item>
 
             <item id="3">
@@ -47,8 +45,7 @@
                 <vegetarian>FALSE</vegetarian>
                 <imghash>102</imghash>
                 <preptime>20</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/humarsupa_small.png</smallthumb>
-                <bigthumb>http://mobiledemo.lsretail.com/w8r/images/humarsupa.png</bigthumb>
+                <bigthumb>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/fafba4ebdefeda50f48fb718216e7ab608b4fa00/images/humarsupa.jpg</bigthumb>
             </item>
 
             <item id="4">
@@ -61,11 +58,10 @@
                 <vegetarian>FALSE</vegetarian>
                 <imghash>103</imghash>
                 <preptime>10</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/melone_small.png</smallthumb>
-                <bigthumb>http://mobiledemo.lsretail.com/w8r/images/melone.png</bigthumb>
+                <bigthumb>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/fafba4ebdefeda50f48fb718216e7ab608b4fa00/images/melone.png</bigthumb>
             </item>
 
-            <item id="5">
+             <item id="5">
                 <name>Hnetukjúklingur</name>
                 <description>Kjúklingur með steiktum spergilkáli og satay hnetusósu</description>
                 <price>1890</price>
@@ -75,7 +71,6 @@
                 <vegetarian>FALSE</vegetarian>
                 <imghash>104</imghash>
                 <preptime>15</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/kjuklingur_brokkoli_small.png</smallthumb>
                 <bigthumb>http://mobiledemo.lsretail.com/w8r/images/kjuklingur_brokkoli.png</bigthumb>
             </item>
 
@@ -85,7 +80,7 @@
         <title>Aðalréttir</title>
         <imghash>2</imghash>
         <submenupic>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/07-wedding-dish-main-course.jpg</submenupic>
-        <items>
+         <items>
             <item id="6">
                 <name>Hamborgari hússins</name>
                 <description>Grillaður hamborgari með klettasalati, tómötum, eggi og beikon, borin fram með bernaise sósu</description>
@@ -96,7 +91,6 @@
                 <vegetarian>FALSE</vegetarian>
                 <imghash>105</imghash>
                 <preptime>20</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/hamborgari_hussins_small.png</smallthumb>
                 <bigthumb>http://mobiledemo.lsretail.com/w8r/images/hamborgari_hussins.png</bigthumb>
             </item>
             <item id="7">
@@ -109,7 +103,6 @@
                 <vegetarian>TRUE</vegetarian>
                 <imghash>106</imghash>
                 <preptime>15</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/salat_small.png</smallthumb>
                 <bigthumb>http://mobiledemo.lsretail.com/w8r/images/salat.png</bigthumb>
             </item>
             <item id="8">
@@ -122,7 +115,6 @@
                 <vegetarian>TRUE</vegetarian>
                 <imghash>107</imghash>
                 <preptime>20</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/margarita_small.png</smallthumb>
                 <bigthumb>http://mobiledemo.lsretail.com/w8r/images/margarita.png</bigthumb>
             </item>
             <item id="9">
@@ -135,10 +127,9 @@
                 <vegetarian>FALSE</vegetarian>
                 <imghash>107</imghash>
                 <preptime>20</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/margarita_small.png</smallthumb>
                 <bigthumb>http://mobiledemo.lsretail.com/w8r/images/margarita.png</bigthumb>
             </item>
-            <item id="10">
+             <item id="10">
                 <name>Nautafille</name>
                 <description>Nautafille borið fram með rauðvínslagaðri sveppasósu, bökuðum kartöflustrimlum og kartöflumús</description>
                 <price>4590</price>
@@ -148,7 +139,6 @@
                 <vegetarian>FALSE</vegetarian>
                 <imghash>107</imghash>
                 <preptime>20</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/nautafille_small.png</smallthumb>
                 <bigthumb>http://mobiledemo.lsretail.com/w8r/images/nautafille.png</bigthumb>
             </item>
         </items>
@@ -157,7 +147,7 @@
         <title>Eftirréttir</title>
         <imghash>3</imghash>
         <submenupic>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/Macaroons-Haute-Couture.jpg</submenupic>
-        <items>
+         <items>
             <item id="11">
                 <name>Myntu- og sítrónu gelato</name>
                 <description>Myntu- og sítrónu gelato sorbet með jarðaberjum, lime og vanillustöngum</description>
@@ -168,6 +158,7 @@
                 <vegetarian>TRUE</vegetarian>
                 <imghash>108</imghash>
                 <preptime>10</preptime>
+                <bigthumb>http://mobiledemo.lsretail.com/w8r/images/nautafille.png</bigthumb>
             </item>
             <item id="12">
                 <name>Eplakaka</name>
@@ -179,7 +170,6 @@
                 <vegetarian>TRUE</vegetarian>
                 <imghash>110</imghash>
                 <preptime>10</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/eplakaka_small.png</smallthumb>
                 <bigthumb>http://mobiledemo.lsretail.com/w8r/images/eplakaka.png</bigthumb>
             </item>
             <item id="13">
@@ -192,8 +182,7 @@
                 <vegetarian>TRUE</vegetarian>
                 <imghash>110</imghash>
                 <preptime>10</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/randalina_small.png</smallthumb>
-                <bigthumb>http://mobiledemo.lsretail.com/w8r/images/randalina.png</bigthumb>
+                <bigthumb>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/fafba4ebdefeda50f48fb718216e7ab608b4fa00/images/randalina.png</bigthumb>
             </item>
             <item id="14">
                 <name>Karamelluterta</name>
@@ -205,7 +194,6 @@
                 <vegetarian>TRUE</vegetarian>
                 <imghash>110</imghash>
                 <preptime>10</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/randalina_small.png</smallthumb>
                 <bigthumb>http://mobiledemo.lsretail.com/w8r/images/randalina.png</bigthumb>
             </item>
             <item id="15">
@@ -218,7 +206,6 @@
                 <vegetarian>TRUE</vegetarian>
                 <imghash>110</imghash>
                 <preptime>10</preptime>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/kaffi_croissant_small.png</smallthumb>
                 <bigthumb>http://mobiledemo.lsretail.com/w8r/images/kaffi_croissant.png</bigthumb>
             </item>
         </items>
@@ -228,45 +215,42 @@
         <imghash>4</imghash>
         <submenupic>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/beverages-filteration.jpg</submenupic>
         <items>
-            <item id="16">
-                <name>Hvítvín hússins</name>
-                <price>990</price>
-                <description>Vínið er gullið, kremað og ávaxtakennt. Það er líflegt þegar það er drukkið eitt og sér en þykknar upp þegar þess er neytt með mat.</description>
-                <imghash>111</imghash>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/kaffi_croissant_small.png</smallthumb>
-                <bigthumb>http://mobiledemo.lsretail.com/w8r/images/kaffi_croissant.png</bigthumb>
-            </item>
-            <item id="17">
-                <name>Rauðvín hússins</name>
-                <price>990</price>
-                <description>Ákafur angan af rauðum berjum, virkilega þroskaður, mjúkur og höfugur í munni með fágaðri fyllingu. Dökk þroskuð ber einkenna bragðið, mikil fylling gott jafnvægi og þægilega ferskt. </description>
-                <imghash>112</imghash>
-            </item>
+                <item id="16">
+                    <name>Hvítvín hússins</name>
+                    <price>990</price>
+                    <description>Vínið er gullið, kremað og ávaxtakennt. Það er líflegt þegar það er drukkið eitt og sér en þykknar upp þegar þess er neytt með mat.</description>
+                    <imghash>111</imghash>
+                    <bigthumb>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/fafba4ebdefeda50f48fb718216e7ab608b4fa00/images/hvitvin.png</bigthumb>
+                </item>
+                <item id="17">
+                    <name>Rauðvín hússins</name>
+                    <price>990</price>
+                    <description>Ákafur angan af rauðum berjum, virkilega þroskaður, mjúkur og höfugur í munni með fágaðri fyllingu. Dökk þroskuð ber einkenna bragðið, mikil fylling gott jafnvægi og þægilega ferskt. </description>
+                    <imghash>112</imghash>
+                    <bigthumb>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/fafba4ebdefeda50f48fb718216e7ab608b4fa00/images/raudvin.png</bigthumb>
+                </item>
 
-            <item id="18">
-                <name>Úlfur (bjór)</name>
-                <price>990</price>
-                <description>Gullinn. Þétt meðalfylling, þurr, ferskur, beiskur. Suðrænn ávöxtur, malt, grösugir og blómlegir humlar.</description>
-                <imghash>113</imghash>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/ulfur_small.png</smallthumb>
-                <bigthumb>http://mobiledemo.lsretail.com/w8r/images/ulfur.png</bigthumb>
-            </item>
-            <item id="19">
-                <name>Coca Cola</name>
-                <price>290</price>
-                <description>Njóttu Coke með #W8R</description>
-                <imghash>114</imghash>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/cocacola_small.png</smallthumb>
-                <bigthumb>http://mobiledemo.lsretail.com/w8r/images/cocacola.png</bigthumb>
-            </item>
-            <item id="20">
-                <name>Kaffi, La Esperanza</name>
-                <price>290</price>
-                <description>Reykjavik Roasters: Fylling og áferð af möndlum og mjólkursúkkulaði. Sæta af hnetum og sýra af blóðappelsínum bætir hvort annað upp. </description>
-                <imghash>115</imghash>
-                <smallthumb>http://mobiledemo.lsretail.com/w8r/images/kaffi_small.png</smallthumb>
-                <bigthumb>http://mobiledemo.lsretail.com/w8r/images/kaffi.png</bigthumb>
-            </item>
+                <item id="18">
+                    <name>Úlfur (bjór)</name>
+                    <price>990</price>
+                    <description>Gullinn. Þétt meðalfylling, þurr, ferskur, beiskur. Suðrænn ávöxtur, malt, grösugir og blómlegir humlar.</description>
+                    <imghash>113</imghash>
+                    <bigthumb>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/fafba4ebdefeda50f48fb718216e7ab608b4fa00/images/ulfur.jpg</bigthumb>
+                </item>
+                <item id="19">
+                    <name>Coca Cola</name>
+                    <price>290</price>
+                    <description>Njóttu Coke með #W8R</description>
+                    <imghash>114</imghash>
+                    <bigthumb>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/fafba4ebdefeda50f48fb718216e7ab608b4fa00/images/cocacola.png</bigthumb>
+                </item>
+                <item id="20">
+                    <name>Kaffi, La Esperanza</name>
+                    <price>290</price>
+                    <description>Reykjavik Roasters: Fylling og áferð af möndlum og mjólkursúkkulaði. Sæta af hnetum og sýra af blóðappelsínum bætir hvort annað upp. </description>
+                    <imghash>115</imghash>
+                    <bigthumb>http://mobiledemo.lsretail.com/w8r/images/kaffi.png</bigthumb>
+                </item>
         </items>
     </submenu>
 </menu>
