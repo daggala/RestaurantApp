@@ -3,7 +3,7 @@
     <submenu>
         <title>Forréttir</title>
         <imghash>1</imghash>
-        <submenupic>http://mobiledemo.lsretail.com/w8r/images/sm_snittur.png</submenupic>
+        <submenupic>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/sm_snittur.png.jpg</submenupic>
         <items>
             <item id="1">
                 <name>Humarhalar</name>
@@ -79,7 +79,7 @@
     <submenu>
         <title>Aðalréttir</title>
         <imghash>2</imghash>
-        <submenupic>http://mobiledemo.lsretail.com/w8r/images/sm_kjuklingabringa.png</submenupic>
+        <submenupic>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/sm_kjuklingabringa.png.jpg</submenupic>
         <items>
             <item id="6">
                 <name>Hamborgari hússins</name>
@@ -146,7 +146,7 @@
     <submenu>
         <title>Eftirréttir</title>
         <imghash>3</imghash>
-        <submenupic>http://mobiledemo.lsretail.com/w8r/images/sm_gelato.png</submenupic>
+        <submenupic>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/sm_gelato.png.jpg</submenupic>
         <items>
             <item id="11">
                 <name>Myntu- og sítrónu gelato</name>
@@ -182,7 +182,7 @@
                 <vegetarian>TRUE</vegetarian>
                 <imghash>110</imghash>
                 <preptime>10</preptime>
-                <bigthumb>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/fafba4ebdefeda50f48fb718216e7ab608b4fa00/images/randalina.png</bigthumb>
+                <bigthumb>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/randalina.png</bigthumb>
             </item>
             <item id="14">
                 <name>Karamelluterta</name>
@@ -213,7 +213,7 @@
     <submenu>
         <title>Drykkir</title>
         <imghash>4</imghash>
-        <submenupic>http://mobiledemo.lsretail.com/w8r/images/sm_berjakokteill.png</submenupic>
+        <submenupic>https://raw.githubusercontent.com/thorhildurmagnusdottir/MenuApp/master/images/sm_berjakokteill.png.jpg</submenupic>
             <items>
                 <item id="16">
                     <name>Hvítvín hússins</name>
